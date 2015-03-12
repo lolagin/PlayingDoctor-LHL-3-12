@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic)NSString *name;
 @property (strong, nonatomic)NSString *specialization;
+@property (strong, nonatomic)NSArray *formsOfDeath;
+
 -(void)treatPatient:(Patient *)patient;
 -(instancetype) initWithName:(NSString *)name AndSpecialization:(NSString *)specialization;
 -(void)addPatient:(Patient *)patient;

@@ -12,14 +12,17 @@
 
 @interface Patient : NSObject
 
-@property (strong, nonatomic)NSString *ailment;
+
 @property (strong, nonatomic)NSString *name;
 @property (strong, nonatomic)NSNumber *age;
-@property (assign, nonatomic)BOOL *healthCard;
+@property (assign, nonatomic)BOOL healthCard;
+@property (strong, nonatomic)NSString *dizeezus;
+@property (strong, nonatomic)NSMutableArray *drugList;
 
 -(instancetype)initWithName:(NSString *)name AndAge:(NSNumber *)age;
 
 -(void)demandDrugs:(Doctor *)doctor;
 -(void)visitDoctor:(Doctor *)doctor;
+-(void)addDrugToList:(NSString *)drugz;
 
 @end

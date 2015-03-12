@@ -10,7 +10,6 @@
 		6DDAE9041AB1FADB00C55F20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAE9031AB1FADB00C55F20 /* main.m */; };
 		6DDAE90C1AB1FB5000C55F20 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAE90B1AB1FB5000C55F20 /* Doctor.m */; };
 		6DDAE90F1AB1FB5F00C55F20 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAE90E1AB1FB5F00C55F20 /* Patient.m */; };
-		6DDAE9121AB2148900C55F20 /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDAE9111AB2148900C55F20 /* Disease.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,8 +31,6 @@
 		6DDAE90B1AB1FB5000C55F20 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		6DDAE90D1AB1FB5F00C55F20 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		6DDAE90E1AB1FB5F00C55F20 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
-		6DDAE9101AB2148900C55F20 /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disease.h; sourceTree = "<group>"; };
-		6DDAE9111AB2148900C55F20 /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disease.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +66,6 @@
 				6DDAE9031AB1FADB00C55F20 /* main.m */,
 				6DDAE90A1AB1FB5000C55F20 /* Doctor.h */,
 				6DDAE90B1AB1FB5000C55F20 /* Doctor.m */,
-				6DDAE9101AB2148900C55F20 /* Disease.h */,
-				6DDAE9111AB2148900C55F20 /* Disease.m */,
 				6DDAE90D1AB1FB5F00C55F20 /* Patient.h */,
 				6DDAE90E1AB1FB5F00C55F20 /* Patient.m */,
 			);
@@ -135,7 +130,6 @@
 			files = (
 				6DDAE90F1AB1FB5F00C55F20 /* Patient.m in Sources */,
 				6DDAE90C1AB1FB5000C55F20 /* Doctor.m in Sources */,
-				6DDAE9121AB2148900C55F20 /* Disease.m in Sources */,
 				6DDAE9041AB1FADB00C55F20 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

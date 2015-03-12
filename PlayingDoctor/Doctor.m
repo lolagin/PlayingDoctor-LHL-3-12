@@ -10,6 +10,7 @@
 
 @implementation Doctor {
     NSMutableArray *_patientList;
+    NSArray *_drugList;
 }
 
 -(instancetype) initWithName:(NSString *)name AndSpecialization:(NSString *)specialization{
@@ -17,7 +18,9 @@
     if (self){
         self.name = name;
         self.specialization = specialization;
-        _patientList =  [[NSMutableArray alloc] init];
+        _patientList = [[NSMutableArray alloc] init];
+        _drugList = [[NSArray alloc] initWithObjects:@"chopping off fingers",@"money",@"hopelessness",@"appendectomies", @"needles", nil];
+        self.formsOfDeath = [[NSArray alloc] initWithObjects:@"wilson's disease",@"the aids",@"penislessness",@"lolagarus",@"crone's disease",nil];
     }
     return self;
 }
@@ -25,6 +28,7 @@
     if (patient.healthCard){
         [_patientList addObject:patient];
         NSLog(@"welcome to the surgery %@", patient.name);
+        [self diagnosis:patient];
     }
         else {
             NSLog(@"please leave, you disgusting tramp");
@@ -40,21 +44,40 @@
         }return false;
     }
 
+//@"wilson's disease",@"the aids",@"penislessness",@"lolagarus",@"crone's disease"
 -(void)treatPatient:(Patient *)patient {
     BOOL patientCheck = [self isPatient:patient];
     if (patientCheck) {
         NSLog(@"I treat thee!");
+        for (int i = 0; i < [self.formsOfDeath count]; i++){
+
+            if (patient.dizeezus == self.formsOfDeath[i]){
+                [patient addDrugToList:_drugList[i]];
+                NSLog(@"Wow that took a lot of %@ to treat your disgusting %@", _drugList[i], self.formsOfDeath[i]);
+                break;
+        }
+
+            else {
+
+                continue;
+        }
         
+    }
     }
     else {
         NSLog(@"please leave, you disgusting tramp");
     }
 
-}
+                     }
+
     -(void)diagnosis:(Patient *)patient {
-        NSLog(@"your %@ does not look good!", patient.ailment);
+        NSLog(@"your %@ does not look good!", patient.dizeezus);
+        [self treatPatient:patient];
+        patient.dizeezus = NULL;
+        NSLog(@"oh look ur heald lulz");
     }
-    
+
+
     
     
     
