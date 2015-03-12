@@ -19,11 +19,13 @@
         self.name = name;
         self.specialization = specialization;
         _patientList = [[NSMutableArray alloc] init];
-        _drugList = [[NSArray alloc] initWithObjects:@"chopping off fingers",@"money",@"hopelessness",@"appendectomies", @"needles", nil];
-        self.formsOfDeath = [[NSArray alloc] initWithObjects:@"wilson's disease",@"the aids",@"penislessness",@"lolagarus",@"crone's disease",nil];
+        _drugList = [[NSArray alloc] initWithObjects:@"amputation",@"money",@"hopelessness",@"appendectomies", @"needles", nil];
+        self.formsOfDeath = [[NSArray alloc] initWithObjects:@"wilson's disease",@"tedium",@"Slappy Ligaments",@"lolagarus",@"Epsom Fever",nil];
+        
     }
     return self;
 }
+
 -(void)addPatient:(Patient *)patient{
     if (patient.healthCard){
         [_patientList addObject:patient];

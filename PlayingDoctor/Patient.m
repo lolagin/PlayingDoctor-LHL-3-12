@@ -21,7 +21,7 @@
     self = [super init];
     if (self){
         
-_formsOfDeath = [[NSArray alloc] initWithObjects:@"wilson's disease",@"the aids",@"penislessness",@"lolagarus",@"crone's disease",nil];
+_formsOfDeath = [[NSArray alloc] initWithObjects:@"wilson's disease",@"tedium",@"Slappy Ligaments",@"lolagarus",@"Epsom Fever",nil];
         self.name = name;
         self.age = age;
         self.healthCard = TRUE;

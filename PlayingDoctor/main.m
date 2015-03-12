@@ -13,11 +13,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         
-        Doctor *doogieHowser = [[Doctor alloc] initWithName:@"lulz"AndSpecialization:@"Herpes"];
-        Patient *plagueRat = [[Patient alloc] initWithName:@"tard" AndAge:@30];
-        
-        NSLog(@"hello doktor: %@ and patient: %@",doogieHowser.name, plagueRat.name);
-        [plagueRat visitDoctor:doogieHowser];
+        Doctor *doogieHowser = [[Doctor alloc] initWithName:@"Doogie Howzer"AndSpecialization:@"Paranoia"];
+        Patient *firstPatient = [[Patient alloc] initWithName:@"Mister Jones" AndAge:@30];
+        Patient *secondPatient = [[Patient alloc] initWithName:@"Father Time" AndAge:@120];
+        [firstPatient visitDoctor:doogieHowser];
+        [secondPatient visitDoctor:doogieHowser];
         
         
     }
